@@ -1,5 +1,8 @@
 # RSpec::Statsd
 
+[![Build Status](https://secure.travis-ci.org/grk/rspec-statsd.png)](http://travis-ci.org/grk/rspec-statsd)
+
+
 RSpec::Statsd provides a way to measure rspec runs in statsd. It uses the
 [http_statsd](https://github.com/grk/http_statsd/) gem to send the results
 over HTTP to a http statsd proxy.
