@@ -47,7 +47,7 @@ describe RSpec::Statsd::Formatter do
   context "when can't connect to statsd proxy" do
     it "should print the exception" do
       orig_stdout = $stdout
-      $stdout = mock(write: true)
+      $stdout = mock(:write => true)
       expect_output("RSpec::Statsd: Could not send gauge sample-test.duration:")
       expect_output("#<Exception: connection error>")
       expect_output("RSpec::Statsd: Could not send gauge sample-test.failure.duration:")
